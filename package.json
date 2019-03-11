@@ -17,7 +17,7 @@
     "binding",
     "c"
   ],
-  "homepage": "http://github.com/node-ffi/node-ffi",
+  "homepage": "https://github.com/iroot/node-ffi",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -26,22 +26,26 @@
     "bindings": "~1.2.0",
     "debug": "2",
     "nan": "^2.12.0",
-    "ref": "1",
-    "ref-struct": "1"
+    "ref": "iroot/ref",
+    "ref-struct": "iroot/ref-struct"
   },
+  "bundledDependencies": [
+    "prebuild-install"
+  ],
   "devDependencies": {
     "fs-extra": "^0.23.1",
     "mocha": "*",
-    "ref-array": "1"
+    "ref-array": "iroot/ref-array"
   },
   "scripts": {
-    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
+    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
+    "install": "prebuild-install || node-gyp rebuild"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/node-ffi/node-ffi.git"
+    "url": "https://github.com/iroot/node-ffi.git"
   },
   "bugs": {
-    "url": "http://github.com/node-ffi/node-ffi/issues"
+    "url": "https://github.com/iroot/node-ffi/issues"
   }
 }

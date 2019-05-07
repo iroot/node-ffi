@@ -26,8 +26,8 @@
     "bindings": "~1.2.0",
     "debug": "2",
     "nan": "^2.12.0",
-    "ref": "iroot/ref",
-    "ref-struct": "iroot/ref-struct"
+    "ref": "https://github.com/iroot/ref/tarball/prebuilt",
+    "ref-struct": "https://github.com/iroot/ref-struct/tarball/prebuilt"
   },
   "bundledDependencies": [
     "prebuild-install"
@@ -35,7 +35,7 @@
   "devDependencies": {
     "fs-extra": "^0.23.1",
     "mocha": "*",
-    "ref-array": "iroot/ref-array"
+    "ref-array": "https://github.com/iroot/ref-array/tarball/prebuilt"
   },
   "scripts": {
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
